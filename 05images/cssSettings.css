@@ -1,0 +1,176 @@
+body {
+    font-family: "Orbitron", sans-serif;
+    margin: 0;
+    background-color: #b5b6bb;
+}
+
+/* Header stuff */
+header {
+    background-color: #ff7f1c;
+    padding: 1rem 10px;
+}
+
+header span {
+    color: #231a1d;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+/* Navigation stuff */
+nav {
+    background-color: #231a1d;
+}
+
+nav ul {
+    margin: 0;
+    padding: 10px 20px;
+    list-style-type: none;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    padding: .83rem 1rem;
+    text-decoration: none;
+    font-size: .9rem;
+    color: #fff;
+    font-weight: 600;
+}
+nav li.active a {
+    background-color: #451cff;
+}
+nav li a:hover {
+    color: #ff7f1c;
+}
+
+/* Main stuff */
+main {
+    padding: 1rem 10px;
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+main h1 {
+    margin: 0;
+    background-color: #451cff;
+    color:#fff;
+    padding: 1rem 10px;
+    border-radius: 10px;
+    border: #fff solid 4px;
+}
+main h2 a {
+    text-decoration: none;
+    font-weight: 900;
+    color: #fff;
+}
+main h2 a:hover {
+    color: #451cff;
+}
+main p {
+    color: #231a1d;
+    font-weight: 600;
+}
+
+main p em {
+    color: #451cff;
+    font-weight: 900;
+}
+
+main h2 {
+    margin: 0;
+    background-color: #1c6cff;
+    color:#ffffff;
+    padding: 0.5rem 10px;
+    border-radius: 10px;
+    border: #ffffff solid 4px;
+}
+
+main ul li {
+    list-style-type: circle;
+    line-height: 125%;
+    margin-bottom: .5rem;
+}
+
+main ul li strong {
+    color: #451cff;
+}
+
+main ol li {
+    line-height: 125%;
+    margin-bottom: .5rem;
+}
+
+main ol li strong {
+    color: #451cff;
+}
+
+main dl {
+    font-weight: 600;
+}
+
+main dl dt {
+    font-weight: 600;
+    background-color: #ff7f1c;
+    border: #231a1d solid 5px;
+    border-radius: 10px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+/* Image stuff */
+figure.wrapped {
+    margin: 10px 10px 0 50px;
+    width: 20%;
+    float: right;
+    border: solid 4px #451cff;
+    background-color: #ff7f1c;
+}
+
+figure.wrapped img {
+    width: 100%;
+    height: auto;
+}
+
+figure.wrapped figcaption {
+    text-align: center;
+    font-size: .8rem;
+    margin: 0 0 5px 0;
+}
+
+/* Gallery stuff */
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 10px;
+}
+
+div.gallery img {
+    border: solid 4px #451cff;
+    margin: 20px 0 0 0;
+}
+div.gallery figure {
+    margin: 0;
+}
+
+div.gallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+    border: solid 4px #451cff;
+    background-color: #ff7f1c;
+}
+/* Footer stuff */
+footer {
+    background-color: #231a1d;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: .9rem;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+footer p {
+    margin: 0;
+}
