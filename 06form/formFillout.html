@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Eric Lane">
+    <meta name="description" content="Learn about the enemies of Super Earth from the Helldivers game franchise">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cssSettings.css">
+    <title>A Helldiver's Guide to the Galaxy: Fillout Form</title>
+</head>
+
+<body>
+    <!-- Start the page head -->
+    <header>
+        <span>A Helldiver's Guide to the Galaxy</span>
+    </header>
+
+    <!-- Start the page navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home Page</a></li>
+            <li><a href="superEarthDetails.html">Super Earth</a></li>
+            <li><a href="automatonsDetails.html">The Automatons [REDACTED]</a></li>
+            <li><a href="terminidsDetails.html">The Terminids [REDACTED]</a></li>
+            <li><a href="illuminateDetails.html">The Illuminate [REDACTED]</a></li>
+            <li><a href="enemyImages.html">Enemy Images</a></li>
+            <li class="active"><a href="formFillout.html">Submit an Idea</a></li>
+        </ul>
+    </nav>
+
+    <!-- Start the main content -->
+    <main>
+        <h1>Enemy Unit Idea Submission</h1>
+
+        <form method="get" class="myForm" action="thanks.html">
+
+            <fieldset>
+                <legend>Enemy faction <strong>(required)</strong></legend>
+                <label><input type="radio" name="enemyFactionChoice" value="automaton" required>Automaton Enemy</label>
+
+                <label><input type="radio" name="enemyFactionChoice" value="terminid" required>Terminid Enemy</label>
+
+                <label><input type="radio" name="enemyFactionChoice" value="illuminate" required>Illuminate Enemy</label>
+
+                <label><input type="radio" name="enemyFactionChoice" value="newFaction" required>New Faction Enemy</label>
+                <label>
+                    <textarea name="comments" placeholder="New Faction Name"></textarea>
+                </label>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Damage options</legend>
+                <p>Choose one or more</p>
+                <label><input type="checkbox" name="damageType" value="fireDmg">Enemy deals fire damage</label>
+
+                <label><input type="checkbox" name="damageType" value="electDmg">Enemy deals electricity
+                    damage</label>
+
+                <label><input type="checkbox" name="damageType" value="fumeDmg">Enemy deals fume damage</label>
+
+                <label><input type="checkbox" name="damageType" value="ExplDmg">Enemy deals explosive damage</label>
+
+                <label>One-shot capabilites <strong>(required)</strong>
+                    <select name="oneshotCapabilites" required>
+                        <option value="">Please Select</option>
+
+                        <option value="oneshotProximityshot" >The enemy can oneshot players even by only hitting near
+                            them</option>
+
+                        <option value="oneshotBodyshot">The enemy can onshot players if they hit them anywhere on the
+                            body</option>
+
+                        <option value="oneshotHeadshot">The enemy can oneshot players only if they hit them in the head
+                        </option>
+
+                        <option value="noOneshot">The enemy cannot oneshot players, regardless of where they hit
+                        </option>
+
+                    </select>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Lore</legend>
+                <label>What is the new enemy's name? <strong>(required)</strong>
+                    <textarea name="enemyName" placeholder="New Enemy name" required></textarea>
+                </label>
+
+                <label>What is the lore of the new enemy?
+                    <textarea name="enemyLore" placeholder="Lore"></textarea>
+                </label>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Personal Info <strong>(required)</strong></legend>
+                <label>First name: <input type="text" placeholder="Joe" required></label>
+                <label>Last name: <input type="text" placeholder="Shmoe" required></label>
+                <label>Email: <input type="email" placeholder="joeshmoe@gmail.com" required></label>
+                <label>Phone number: <input type="tel" placeholder="123-456-7890" required></label>
+            </fieldset>
+
+            <input type="submit" value="Send Delivery request">
+        </form>
+    </main>
+
+    <!-- Start the page footer -->
+    <footer>
+        <p>&copy; 2026 &bull; Eric Lane &bull; Web Essentials</p>
+
+    </footer>
+
+</body>
+
+</html>
